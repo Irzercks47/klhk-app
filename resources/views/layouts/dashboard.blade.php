@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
     <script src="{{ mix('js/app.js') }}"></script>
     <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 </head>
 
 <body>
@@ -22,7 +23,14 @@
                     alt="image-logo-dinas-kehutanan">
             </a>
         </div>
-        <div class="w-full flex flex-wrap items-center place-content-end p-6">
+        <div class="w-full flex flex-wrap items-center place-content-end p-6 min-w-min min-h-min">
+            <div class="mr-6 min-w-min min-h-min relative overflow-visible box-border">
+                <span class="notif-count absolute z-1 left-5 -top-2 bg-red-600 text-white inline-block text-sm min-w-min text-center p-0.5">7</span>
+                <button class="place-item-center hover:bg-gray-200 rounded-full w-10 h-10 notif-button">
+                    <ion-icon class="text-2xl" name="notifications-outline"></ion-icon>
+                </button>
+            </div>
+
             <div class="h-8 w-8 rounded-full bg-red-200 flex flex-wrap justify-center items-center">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
@@ -61,6 +69,8 @@
             @yield('content')
         </div>
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></scri>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

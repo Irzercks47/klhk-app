@@ -875,6 +875,12 @@ input:checked + .toggle-bg {
 .left-0 {
   left: 0px;
 }
+.left-5 {
+  left: 1.25rem;
+}
+.-top-2 {
+  top: -0.5rem;
+}
 .z-50 {
   z-index: 50;
 }
@@ -942,6 +948,9 @@ input:checked + .toggle-bg {
 }
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+.box-border {
+  box-sizing: border-box;
 }
 .block {
   display: block;
@@ -1014,6 +1023,11 @@ input:checked + .toggle-bg {
 .h-9 {
   height: 2.25rem;
 }
+.min-h-min {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+}
 .w-full {
   width: 100%;
 }
@@ -1047,19 +1061,24 @@ input:checked + .toggle-bg {
 .w-12 {
   width: 3rem;
 }
-.w-\[75vw\] {
-  width: 75vw;
-}
 .w-fit {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+.w-\[75vw\] {
+  width: 75vw;
 }
 .w-64 {
   width: 16rem;
 }
 .w-1\/2 {
   width: 50%;
+}
+.min-w-min {
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -1164,6 +1183,9 @@ input:checked + .toggle-bg {
 .divide-gray-100 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-divide-opacity));
+}
+.overflow-visible {
+  overflow: visible;
 }
 .overflow-x-auto {
   overflow-x: auto;
@@ -1293,6 +1315,10 @@ input:checked + .toggle-bg {
   --tw-bg-opacity: 1;
   background-color: rgb(119 29 29 / var(--tw-bg-opacity));
 }
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 36 36 / var(--tw-bg-opacity));
+}
 .bg-green-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(3 84 63 / var(--tw-bg-opacity));
@@ -1335,6 +1361,12 @@ input:checked + .toggle-bg {
 }
 .p-8 {
   padding: 2rem;
+}
+.p-0\.5 {
+  padding: 0.125rem;
+}
+.p-0 {
+  padding: 0px;
 }
 .px-3 {
   padding-left: 0.75rem;
@@ -1398,6 +1430,10 @@ input:checked + .toggle-bg {
 .text-right {
   text-align: right;
 }
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1405,10 +1441,6 @@ input:checked + .toggle-bg {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 .text-sm {
   font-size: 0.875rem;

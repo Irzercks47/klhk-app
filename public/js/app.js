@@ -2062,6 +2062,21 @@ module.exports = {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+function changeNotifIcon() {
+  var notifButton = document.querySelector(".notif-button");
+  notifButton.addEventListener('click', function () {
+    if (notifButton.children[0].getAttribute("name") == "notifications-outline") {
+      notifButton.innerHTML = '<ion-icon class="text-2xl" name="notifications"></ion-icon>';
+    } else {
+      notifButton.innerHTML = '<ion-icon class="text-2xl" name="notifications-outline"></ion-icon>';
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  changeNotifIcon();
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
